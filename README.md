@@ -23,6 +23,9 @@ See `example_layouts.json` for an example.
 ```sh
 python evaluate.py \
 --layout-json example_layouts.json \
---output metrics.csv \
---metrics stress,xing,ring
+--baselines neato,kamada_kawai \
+--metrics-output metrics.csv \
+--spc-output spc.csv \
+--metrics stress,xing,ring \
+--split test
 ```
