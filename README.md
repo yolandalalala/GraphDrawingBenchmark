@@ -36,17 +36,17 @@ python main.py eval \
 * --metrics: Comma-separated list of evaluation metrics.
 * --split: Dataset split to evaluate. (train, val, test)
 
-## Print graph IDs for a specific dataset split
+## Show graph IDs for a specific dataset split
 ```sh
 python main.py info splits --name <split>
 ```
 
-## Print available baseline layout algorithms
+## Show available baseline layout algorithms
 ```sh
 python main.py info baselines
 ```
 
-## Print available evaluation metrics
+## Show available evaluation metrics
 ```sh
 python main.py info metrics
 ```
