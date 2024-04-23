@@ -77,7 +77,7 @@ This metric measures the discrepancy of node distances between the Euclidian lay
 \end{align}
 ```
 where
-```
+```math
 \begin{align}
     p_{ij} = p_{ji} &= \frac{p_{j|i}+p_{i|j}}{2N} \\ 
     p_{j|i} &= \frac{\exp(-\frac{d_{ij}^2}{2\sigma_i^2})}{\sum_{\substack{k\\k\neq i}}\exp(-\frac{d_{ik}^2}{2\sigma_i^2})} \\
