@@ -2,7 +2,6 @@ import pandas as pd
 
 from .nn import (
     CompositeMetric,
-    BaseLayoutMetric,
     BaseTransformation,
     Compose,
     Center,

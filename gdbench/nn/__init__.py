@@ -1,4 +1,3 @@
-from .criteria import *
 from .metrics import *
 from .ops import *
 from .transformations import *
