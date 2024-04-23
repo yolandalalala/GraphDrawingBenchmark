@@ -63,11 +63,11 @@ def metrics(**kwargs):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Graph Drawing Benchmark")
-    subparser = parser.add_subparsers()
+    subparsers = parser.add_subparsers()
 
-    eval_p = subparser.add_parser("eval",
-                                  help="Evaluate layouts",
-                                  description="Evaluate layouts using the specified metrics and baseline methods")
+    eval_p = subparsers.add_parser("eval",
+                                   help="Evaluate layouts",
+                                   description="Evaluate layouts using the specified metrics and baseline methods")
     eval_p.add_argument("--layout-json", type=str, required=True,
                         help="Path to the layout TSV file")
     eval_p.add_argument("--baselines", type=lambda s: s.split(','), default=["neato"],
@@ -82,9 +82,9 @@ if __name__ == "__main__":
                         help="Metrics to compute")
     eval_p.set_defaults(func=eval)
 
-    info_p = subparser.add_parser("info",
-                                  help="Print information about the benchmark",
-                                  description="Print information about the benchmark")
+    info_p = subparsers.add_parser("info",
+                                   help="Print information about the benchmark",
+                                   description="Print information about the benchmark")
     info_sp = info_p.add_subparsers()
 
     baselines_p = info_sp.add_parser("baselines",
