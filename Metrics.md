@@ -6,7 +6,6 @@ This metric measures the stress of the layout. The stress is defined as the sum 
 
 ```math
 \begin{equation}
-\label{stress}
 L_\text{stress}=
 \sum_{u, v \in V, u \neq v}
     w_{uv} \left(\|\mathbf{x}_u - \mathbf{x}_v\| - d_{uv}\right)^2 ,
@@ -76,9 +75,9 @@ This metric measures the discrepancy of node distances between the Euclidian lay
     L_\text{t-SNE} = \sum_{\substack{i,j\\i \neq j}} p_{ij}\log\frac{p_{ij}}{q_{ij}}.
     \label{equ:tsne-loss}
 \end{align}
-
-\noindent where
-
+```
+where
+```
 \begin{align}
     p_{ij} = p_{ji} &= \frac{p_{j|i}+p_{i|j}}{2N} \\ 
     p_{j|i} &= \frac{\exp(-\frac{d_{ij}^2}{2\sigma_i^2})}{\sum_{\substack{k\\k\neq i}}\exp(-\frac{d_{ik}^2}{2\sigma_i^2})} \\
