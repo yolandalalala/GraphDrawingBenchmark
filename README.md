@@ -45,8 +45,10 @@ python main.py info splits --name <split>
 ```sh
 python main.py info baselines
 ```
+Please see `Baselines.md` for more details on the baseline layout algorithms.
 
 ## Show available evaluation metrics
 ```sh
 python main.py info metrics
 ```
+Please see `Metrics.md` for more details on the evaluation metrics.
