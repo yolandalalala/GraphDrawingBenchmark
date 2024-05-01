@@ -1,6 +1,6 @@
 # Graph Drawing Benchmark
 
-Welcome to Graph Drawing Benchmark! The purpose of the repository is to provide a standard benchmark and toolkits for 
+Welcome to Graph Drawing Benchmark! The purpose of the repository is to provide a standard benchmark and a set of toolkits for 
 evaluating graph layout algorithms on the Rome dataset. The benchmark includes a comprehensive set of evaluation 
 metrics and baseline layout algorithms. It aims to simplify the evaluation process for researching and developing
 graph layout algorithms. 
