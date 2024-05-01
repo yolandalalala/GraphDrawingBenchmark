@@ -5,6 +5,23 @@ evaluating graph layout algorithms on the Rome dataset. The benchmark includes a
 metrics and baseline layout algorithms. It aims to simplify the evaluation process for researching and developing
 graph layout algorithms. 
 
+## Layout Evaluation
+```sh
+python main.py eval \
+--layout-json example_layouts.json \
+--baselines neato,kamada_kawai \
+--metrics-output metrics.csv \
+--spc-output spc.csv \
+--metrics stress,xing,ring \
+--split test
+```
+* --layout-json: Path to the input JSON file.
+* --baselines: Comma-separated list of baseline layout algorithms.
+* --metrics-output: Path to the output CSV file for evaluation metrics.
+* --spc-output: Path to the output CSV file for metrics SPCs.
+* --metrics: Comma-separated list of evaluation metrics.
+* --split: Dataset split to evaluate. (train, val, test)
+
 ## Input format
 Input file is a JSON file with the following format:
 ```
@@ -23,23 +40,6 @@ Input file is a JSON file with the following format:
 }
 ```
 See `example_layouts.json` for an example.
-
-## Evaluation
-```sh
-python main.py eval \
---layout-json example_layouts.json \
---baselines neato,kamada_kawai \
---metrics-output metrics.csv \
---spc-output spc.csv \
---metrics stress,xing,ring \
---split test
-```
-* --layout-json: Path to the input JSON file.
-* --baselines: Comma-separated list of baseline layout algorithms.
-* --metrics-output: Path to the output CSV file for evaluation metrics.
-* --spc-output: Path to the output CSV file for metrics SPCs.
-* --metrics: Comma-separated list of evaluation metrics.
-* --split: Dataset split to evaluate. (train, val, test)
 
 ## Show graph IDs for a specific dataset split
 ```sh
