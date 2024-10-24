@@ -57,3 +57,30 @@ Please see `Baselines.md` for more details on the baseline layout algorithms.
 python main.py info metrics
 ```
 Please see `Metrics.md` for more details on the evaluation metrics.
+
+## Citation
+If you used our code or find our work useful in your research, please consider citing:
+```
+@article{deepgd,
+author={Wang, Xiaoqi and Yen, Kevin and Hu, Yifan and Shen, Han-Wei},
+journal={IEEE Computer Graphics and Applications},
+title={DeepGD: A Deep Learning Framework for Graph Drawing Using GNN},
+year={2021},
+volume={41},
+number={5},
+pages={32-44},
+doi={10.1109/MCG.2021.3093908}
+}
+```
+```
+@ARTICLE{10224347,
+  author={Wang, Xiaoqi and Yen, Kevin and Hu, Yifan and Shen, Han-Wei},
+  journal={IEEE Transactions on Visualization and Computer Graphics}, 
+  title={SmartGD: A GAN-Based Graph Drawing Framework for Diverse Aesthetic Goals}, 
+  year={2024},
+  volume={30},
+  number={8},
+  pages={5666-5678},
+  keywords={Layout;Graph drawing;Deep learning;Generative adversarial networks;Stress;Generators;Training data;Deep learning for visualization;generative adversarial networks;graph visualization},
+  doi={10.1109/TVCG.2023.3306356}}
+```
