@@ -1,4 +1,4 @@
-datasets
+/datasets
 *.ipynb
 __pycache__
 .idea
